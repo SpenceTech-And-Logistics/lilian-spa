@@ -123,11 +123,6 @@
   transition: transform 0.7s ease;
 }
 
-/* ---------- Stat values pop in once counted ---------- */
-.impact-value {
-  font-variant-numeric: tabular-nums;
-}
-
 /* ---------- Respect reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }

@@ -13,8 +13,6 @@ import "./Motion.css";
 
 // selector -> animation. "stagger" delays siblings one after another.
 const REVEAL = [
-  [".impact-heading, .impact-subheading", "up"],
-  [".impact-stat", "up stagger"],
   [".section-head > *", "up stagger"],
   [".who-image", "left"],
   [".who-text", "right"],
@@ -26,7 +24,7 @@ const REVEAL = [
 ];
 
 // Cards that lean towards the pointer.
-const TILT = ".project-card, .info-card, .impact-stat";
+const TILT = ".project-card, .info-card";
 
 const MAX_TILT = 7; // degrees
 

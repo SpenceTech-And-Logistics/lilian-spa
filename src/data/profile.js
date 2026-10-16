@@ -1,7 +1,5 @@
 import {
-  FaBalanceScale,
   FaFacebookF,
-  FaHandshake,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
@@ -12,15 +10,9 @@ import {
 export const PROFILE = {
   name: "Lilian Manegene",
   tagline: "Wanjiku for Wanjiku",
-  heroTitle: "Your Trusted Legal and Strategic Partner",
   heroText:
     "Advocate. Consultant. Dispute Resolution Advisor. Mediator. Arbitrator. Lobbyist. Negotiator. Compliance Expert. Legislative Drafter.",
 };
-
-export const STATS = [
-  { value: "20+", label: "Years of Experience", icon: FaBalanceScale },
-  { value: "50+", label: "Corporate Partners", icon: FaHandshake },
-];
 
 // Shown in the footer. Leave a value empty ("") to hide it.
 export const CONTACT = {

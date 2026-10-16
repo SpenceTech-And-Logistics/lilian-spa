@@ -32,7 +32,6 @@ function Hero() {
 
       <div className="hero-content">
         <h1 id="hero-title">{PROFILE.name}</h1>
-        <h2>{PROFILE.heroTitle}</h2>
         <p>{PROFILE.heroText}</p>
         <div className="hero-actions">
           <a href="#highlights" className="hero-button">

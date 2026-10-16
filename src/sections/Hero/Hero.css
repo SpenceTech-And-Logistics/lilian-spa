@@ -21,13 +21,6 @@
   line-height: 1.2;
 }
 
-.hero-content h2 {
-  font-size: clamp(1.35rem, 3.5vw, 2rem);
-  font-family: "Fredoka", sans-serif;
-  color: #8a2be2;
-  margin-bottom: 1rem;
-}
-
 .hero-content p {
   font-size: 1.1rem;
   line-height: 1.8;
