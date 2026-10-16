@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import OrgLogo from "../OrgLogo/OrgLogo";
 import "./ProjectCard.css";
 
@@ -15,7 +16,12 @@ function ProjectCard({ item }) {
       </div>
 
       <div className="project-card-body">
-        {item.tag && <span className="project-card-tag">{item.tag}</span>}
+        {item.tag && (
+          <span className="project-card-tag">
+            {item.icon && createElement(item.icon, { "aria-hidden": true })}
+            {item.tag}
+          </span>
+        )}
         <h4>{item.title}</h4>
         {showSubtitle && <p>{item.subtitle}</p>}
       </div>

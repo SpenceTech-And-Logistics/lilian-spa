@@ -74,3 +74,22 @@
     margin-bottom: 2.5rem;
   }
 }
+
+/* Icon badge on each stat card */
+.impact-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.1rem;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #8a2be2, #663399);
+  color: #fff;
+  font-size: 1.6rem;
+  box-shadow: 0 10px 22px rgba(102, 51, 153, 0.3);
+  transform: perspective(300px) rotateX(8deg);
+}
+
+.impact-stat:hover .impact-icon {
+  background: linear-gradient(145deg, #d9b44a, #b8860b);
+}

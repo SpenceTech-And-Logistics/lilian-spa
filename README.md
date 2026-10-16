@@ -1,6 +1,6 @@
 # Lilian Manegene: single-page website
 
-One-page React site (Vite). Sections: Home, About, Projects (rotating carousel), Contact.
+One-page React site (Vite). Sections: Home, About, Career Highlights (rotating carousel). Social links, email and phone are in the footer.
 
 ```bash
 npm install
@@ -13,8 +13,8 @@ npm run build      # production build into dist/
 | What | File |
 | --- | --- |
 | Name, hero text, stats, roles, positions held, other roles | `src/data/profile.js` |
-| Regulations, consultancy clients, cases (and their logos) | `src/data/projects.js` |
-| Email, phone, address, social links, Formspree form ID | `src/sections/Contact/Contact.jsx` |
+| Career Highlights: Acts, regulatory bodies, clients, cases (and their logos) | `src/data/projects.js` |
+| Footer email, phone, location and social links | `CONTACT` and `SOCIALS` in `src/data/profile.js` |
 | Page title, description, share image, search-engine details | `src/seo/site.js` |
 | Which things animate | top of `src/components/Motion/Motion.jsx` |
 

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { createElement, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   A11y,
@@ -32,7 +32,12 @@ function Slide({ item }) {
         />
       </div>
       <div className="logo-slide-body">
-        {item.tag && <span className="logo-slide-tag">{item.tag}</span>}
+        {item.tag && (
+          <span className="logo-slide-tag">
+            {item.icon && createElement(item.icon, { "aria-hidden": true })}
+            {item.tag}
+          </span>
+        )}
         <h3>{item.title}</h3>
         {showSubtitle && <p>{item.subtitle}</p>}
       </div>

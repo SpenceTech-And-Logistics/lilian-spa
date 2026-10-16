@@ -125,6 +125,9 @@
 }
 
 .logo-slide-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.2rem 0.7rem;
   border-radius: 12px;
   background: #e9e0f7;
@@ -168,4 +171,9 @@
 .logo-carousel .swiper-button-next svg {
   width: 18px;
   height: 18px;
+}
+
+.logo-slide-tag svg {
+  color: #b8860b;
+  flex-shrink: 0;
 }

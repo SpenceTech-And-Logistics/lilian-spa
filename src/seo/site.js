@@ -1,6 +1,6 @@
 // Page details used by index.html and by seo-plugin.js at build time.
 // Keep this file plain JavaScript with no imports.
-// Keep the email and phone the same as the Contact section.
+// Keep the email and phone the same as the footer (src/data/profile.js).
 
 export const SITE = {
   name: "Lilian Manegene",

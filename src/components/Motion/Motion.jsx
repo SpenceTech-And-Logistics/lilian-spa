@@ -20,11 +20,9 @@ const REVEAL = [
   [".who-text", "right"],
   [".section-heading", "up"],
   [".info-card", "up stagger"],
-  [".projects-toolbar, .projects-intro", "up"],
+  [".highlight-legend li", "up stagger"],
   [".logo-carousel-wrap", "zoom"],
   [".logo-grid .project-card", "up stagger"],
-  [".contact-info > .contact-card", "left stagger"],
-  [".form-card", "right"],
 ];
 
 // Cards that lean towards the pointer.

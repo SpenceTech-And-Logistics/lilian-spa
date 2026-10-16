@@ -55,6 +55,9 @@
 }
 
 .project-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   align-self: flex-start;
   padding: 0.2rem 0.7rem;
   border-radius: 12px;
@@ -64,4 +67,9 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.project-card-tag svg {
+  color: #b8860b;
+  flex-shrink: 0;
 }

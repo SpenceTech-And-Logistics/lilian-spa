@@ -123,3 +123,172 @@
     text-align: center;
   }
 }
+
+/* ---------- Legal / justice decoration ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-watermark {
+  position: absolute;
+  z-index: 0 !important;
+  left: -4%;
+  bottom: -8%;
+  width: clamp(240px, 36vw, 480px);
+  height: auto;
+  color: #663399;
+  opacity: 0.05;
+  transform: rotate(8deg);
+  pointer-events: none;
+}
+
+/* The stage tilts a little with the pointer, so the badges feel in front of the photo */
+.hero-stage {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  transform-style: preserve-3d;
+  transform: perspective(1100px) rotateY(calc(var(--px, 0) * 9deg))
+    rotateX(calc(var(--py, 0) * -7deg));
+  transition: transform 0.25s ease-out;
+}
+
+.hero-stage img {
+  display: block;
+  width: 100%;
+}
+
+.orb {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 30px rgba(45, 20, 87, 0.22);
+  backdrop-filter: blur(8px);
+  color: #663399;
+  font-size: 1.7rem;
+  transform: translateZ(var(--z, 60px));
+  animation: orb-bob 5.5s ease-in-out infinite;
+}
+
+.orb-scales {
+  top: 6%;
+  right: -22px;
+  --z: 80px;
+}
+
+.orb-gavel {
+  top: 44%;
+  left: -26px;
+  --z: 55px;
+  animation-delay: -1.8s;
+  color: #8a2be2;
+}
+
+.orb-landmark {
+  bottom: 4%;
+  right: 8%;
+  --z: 40px;
+  animation-delay: -3.4s;
+  color: #b8860b;
+}
+
+@keyframes orb-bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -12px; }
+}
+
+/* 3D gold medallion: two faces, a stack of discs for thickness, spinning on its edge */
+.medallion {
+  position: absolute;
+  left: 8%;
+  top: -34px;
+  width: 92px;
+  height: 92px;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  animation: medal-spin 9s linear infinite;
+}
+
+.medallion > span {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.medal-edge {
+  background: #a87a0c;
+  transform: translateZ(calc((var(--i) - 2) * 2.4px));
+}
+
+.medal-face {
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden;
+  background: radial-gradient(circle at 30% 25%, #fff0b8, #e3b53d 55%, #b8860b);
+  border: 5px solid #f2d276;
+  color: #5a3d00;
+  font-size: 2.3rem;
+  box-shadow: inset 0 0 12px rgba(120, 80, 0, 0.45);
+}
+
+.medal-front {
+  transform: translateZ(6px);
+}
+
+.medal-back {
+  transform: rotateY(180deg) translateZ(6px);
+}
+
+@keyframes medal-spin {
+  from { rotate: y 0deg; }
+  to { rotate: y 360deg; }
+}
+
+@media (max-width: 900px) {
+  .orb {
+    width: 54px;
+    height: 54px;
+    font-size: 1.4rem;
+    border-radius: 16px;
+  }
+
+  .orb-scales { right: -8px; }
+  .orb-gavel { left: -8px; }
+
+  .medallion {
+    width: 76px;
+    height: 76px;
+    left: 4%;
+    top: -26px;
+  }
+
+  .medal-face {
+    font-size: 1.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb,
+  .medallion {
+    animation: none;
+  }
+
+  .medallion {
+    rotate: y -25deg;
+  }
+
+  .hero-stage {
+    transform: none;
+  }
+}

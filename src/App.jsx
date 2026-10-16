@@ -4,8 +4,7 @@ import Motion from "./components/Motion/Motion";
 import Hero from "./sections/Hero/Hero";
 import Stats from "./sections/Stats/Stats";
 import About from "./sections/About/About";
-import Projects from "./sections/Projects/Projects";
-import Contact from "./sections/Contact/Contact";
+import Highlights from "./sections/Highlights/Highlights";
 
 function App() {
   return (
@@ -19,8 +18,7 @@ function App() {
         <Hero />
         <Stats />
         <About />
-        <Projects />
-        <Contact />
+        <Highlights />
       </main>
       <Footer />
     </>

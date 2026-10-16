@@ -1,3 +1,12 @@
+import {
+  FaBalanceScale,
+  FaFacebookF,
+  FaHandshake,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
+
 // All the text you are likely to edit lives here, in one place.
 
 export const PROFILE = {
@@ -9,8 +18,28 @@ export const PROFILE = {
 };
 
 export const STATS = [
-  { value: "20+", label: "Years of Experience" },
-  { value: "50+", label: "Corporate Partners" },
+  { value: "20+", label: "Years of Experience", icon: FaBalanceScale },
+  { value: "50+", label: "Corporate Partners", icon: FaHandshake },
+];
+
+// Shown in the footer. Leave a value empty ("") to hide it.
+export const CONTACT = {
+  email: "manegenel@gmail.com",
+  phone: "(+254) 722 809084",
+  phoneLink: "+254722809084",
+  location: "Nairobi, Kenya",
+};
+
+// Social links for the footer. An icon only appears when `href` is filled in.
+export const SOCIALS = [
+  {
+    icon: FaFacebookF,
+    label: "Facebook",
+    href: "https://www.facebook.com/media/set/?set=a.815673175140432&type=3",
+  },
+  { icon: FaTwitter, label: "Twitter", href: "" },
+  { icon: FaInstagram, label: "Instagram", href: "" },
+  { icon: FaLinkedinIn, label: "LinkedIn", href: "" },
 ];
 
 export const ROLES = [
@@ -36,14 +65,14 @@ export const POSITIONS_HELD = [
     period: "2007 - Present",
     title: "Advocate",
     description: "Admitted to the bar in 2004.",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY6-8en5VFw_SHru0wumtQwKRG3g849LtfL_1XAfLIJA&s=10",
+    logo: "",
     short: "ADV",
   },
   {
     period: "Consultant",
     title: "AllAfrica Advisors",
     description: "Policy. Compliance. Governance. Legislation.",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5DvvMx6oqEcD4GLo9nPSvP-cYZxXIl2MkUYqRCGDwQ&s",
+    logo: "",
     short: "AAA",
   },
   {
@@ -66,27 +95,27 @@ export const POSITIONS_HELD = [
     title: "LMB & Partners",
     description: "Legal. Research. Compliance. Mediation. Negotiation.",
     logo: "",
-    short: "LMB & Partners",
+    short: "LMB",
   },
   {
     period: "Consultant",
     title: "BroadWalk Arms",
     description: "Firearms Act",
-    logo: "",
-    short: "BroadWalk Arms",
+    logo: "broadwalk.png",
+    short: "BWA",
   },
   {
     period: "Consultant",
     title: "Women in Business",
     description: "",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCtwYaEDHsn4-g270GplYtlLhGD4Whr0IFs63zvM8Wbg&s=10",
+    logo: "",
     short: "WIB",
   },
   {
     period: "Legal Advisor",
     title: "Maendeleo Ya Wanawake Nairobi",
     description: "",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMi1XZoFnnyF_RRKsBbr6HxlLAV_VLMpApKWwat6nyA&s",
+    logo: "",
     short: "MYWO",
   },
   {
@@ -94,14 +123,14 @@ export const POSITIONS_HELD = [
     title: "Manegene & Partners Advocates",
     description: "Managing Director",
     logo: "",
-    short: "Manegene & Partners Advocates",
+    short: "MPA",
   },
   {
     period: "Advocate",
     title: "Onesmus Githinji & Partners",
     description: "Associate Advocate",
     logo: "",
-    short: "Onesmus Githinji & Partners",
+    short: "OGP",
   },
 ];
 
@@ -113,22 +142,12 @@ export const OTHER_POSITIONS = [
     place: "",
     description: "Dispute Resolution Committee",
   },
-  {
-    period: "Patron",
-    title: "Four Clover Africa Initiative",
-    place: "",
-    description: "",
-  },
+  { period: "Patron", title: "Four Clover Africa Initiative", place: "", description: "" },
   {
     period: "Co-Founder",
     title: "SpenceTech and Logistics",
     place: "",
     description: "",
   },
-  {
-    period: "Convenor",
-    title: "My Dress My Choice",
-    place: "",
-    description: "",
-  },
+  { period: "Convenor", title: "My Dress My Choice", place: "", description: "" },
 ];
