@@ -1,0 +1,20 @@
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto 1.4rem;
+  color: #c9a227;
+  font-size: 1.25rem;
+}
+
+.ornament span {
+  width: 64px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #d9b44a);
+}
+
+.ornament span:last-child {
+  transform: scaleX(-1);
+}

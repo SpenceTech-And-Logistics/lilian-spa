@@ -1,0 +1,139 @@
+/* ---------- Scroll reveal (classes are added by Motion.jsx) ---------- */
+/* Elements start a little off to the side; never let that widen the page. */
+#main {
+  overflow-x: clip;
+}
+
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease var(--reveal-delay, 0ms),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal[data-reveal="up"] { transform: translateY(28px); }
+.reveal[data-reveal="left"] { transform: translateX(-36px); }
+.reveal[data-reveal="right"] { transform: translateX(36px); }
+.reveal[data-reveal="zoom"] { transform: scale(0.94); }
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- 3D tilt on cards ---------- */
+/* While a card is still sliding in, it keeps the slow reveal transition. */
+.tilt {
+  box-shadow: 0 4px 15px rgba(45, 20, 87, 0.06);
+}
+
+.tilt.reveal.is-visible {
+  transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+
+/* After that, it follows the pointer quickly. */
+.tilt.tilt-ready {
+  transition:
+    transform 0.15s ease-out,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.tilt:hover {
+  box-shadow: 0 18px 38px rgba(45, 20, 87, 0.18);
+}
+
+/* Replace the old "lift" hover on project cards with lift + tilt. */
+.project-card.tilt:hover {
+  transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-4px);
+}
+
+/* ---------- Hero: entrance + floating photo ---------- */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.6deg); }
+}
+
+@keyframes hero-glow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.08); }
+}
+
+.hero-content > * {
+  animation: hero-rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-content > :nth-child(2) { animation-delay: 0.12s; }
+.hero-content > :nth-child(3) { animation-delay: 0.24s; }
+.hero-content > :nth-child(4) { animation-delay: 0.36s; }
+
+.hero-image {
+  position: relative;
+}
+
+/* Soft glowing orbs behind the photo */
+.hero-image::before,
+.hero-image::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(2px);
+  animation: hero-glow 6s ease-in-out infinite;
+}
+.hero-image::before {
+  width: 220px; height: 220px;
+  top: 4%; right: 6%;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.35), transparent 70%);
+}
+.hero-image::after {
+  width: 180px; height: 180px;
+  bottom: 6%; left: 4%;
+  background: radial-gradient(circle, rgba(102, 51, 153, 0.3), transparent 70%);
+  animation-delay: 2s;
+}
+
+.hero-image img {
+  position: relative;
+  z-index: 1;
+  animation:
+    hero-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both,
+    hero-float 7s ease-in-out 1.2s infinite;
+}
+
+/* ---------- Buttons: small shine sweep ---------- */
+.hero-button {
+  position: relative;
+  overflow: hidden;
+}
+.hero-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  transform: translateX(-120%);
+}
+.hero-button:hover::after {
+  transform: translateX(120%);
+  transition: transform 0.7s ease;
+}
+
+/* ---------- Stat values pop in once counted ---------- */
+.impact-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .tilt, .tilt.reveal.is-visible, .project-card.tilt:hover { transform: none; }
+  .hero-content > *,
+  .hero-image img,
+  .hero-image::before,
+  .hero-image::after { animation: none; }
+}

@@ -1,0 +1,70 @@
+.highlights {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 0%, #efe6ff 0%, transparent 50%),
+    radial-gradient(circle at 92% 100%, #f1e9ff 0%, transparent 45%),
+    #faf9ff;
+}
+
+.highlights > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Big faint scales of justice in the corner */
+.highlights-watermark {
+  position: absolute;
+  top: 6%;
+  right: -3%;
+  width: clamp(220px, 32vw, 420px);
+  height: auto;
+  color: #663399;
+  opacity: 0.055;
+  transform: rotate(-8deg);
+  pointer-events: none;
+  animation: watermark-sway 14s ease-in-out infinite;
+}
+
+@keyframes watermark-sway {
+  0%, 100% { transform: rotate(-8deg) translateY(0); }
+  50% { transform: rotate(-3deg) translateY(-14px); }
+}
+
+/* Category counts */
+.highlight-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 0.8rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid #e9e0f7;
+  color: #5b4a78;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 10px rgba(45, 20, 87, 0.05);
+}
+
+.highlight-legend svg {
+  color: #c9a227;
+}
+
+.highlight-legend strong {
+  color: #2d1457;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .highlights-watermark {
+    animation: none;
+  }
+}

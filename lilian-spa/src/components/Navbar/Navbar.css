@@ -1,0 +1,129 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #663399;
+  color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.is-scrolled {
+  box-shadow: 0 6px 20px rgba(45, 20, 87, 0.25);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  min-height: 60px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1;
+  text-decoration: none;
+  color: white; /* to be changed according to the vips theme if necessary */
+  font-family:
+    freehand, cursive; /* to be changed according to the vips theme if necessary */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-link {
+  color: white; /* to be changed according to the vips theme if necessary */
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+  color: violet; /* to be changed according to the vips theme if necessary */
+}
+
+.navbar-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.navbar :focus-visible {
+  outline-color: white;
+}
+
+/* Menu button: only shown on small screens */
+.navbar-toggle {
+  display: none;
+  padding: 0.6rem;
+  border: 0;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.navbar-toggle-bar + .navbar-toggle-bar {
+  margin-top: 5px;
+}
+
+.navbar-toggle[aria-expanded="true"] .navbar-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggle[aria-expanded="true"] .navbar-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle[aria-expanded="true"] .navbar-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.25rem 1.5rem 1rem;
+    background: #5a2d8a;
+    box-shadow: 0 12px 24px rgba(45, 20, 87, 0.25);
+  }
+
+  .navbar-links.is-open {
+    display: flex;
+  }
+
+  .navbar-link {
+    display: block;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
