@@ -1,5 +1,6 @@
 import { PLACEHOLDER, resolveImage } from "../../utils/resolveImage";
 import { ROLES, POSITIONS_HELD, OTHER_POSITIONS } from "../../data/profile";
+import LogoCarousel from "../../components/LogoCarousel/LogoCarousel";
 import lilly from "../../assets/images/lilly.jpg";
 import "./About.css";
 
@@ -69,11 +70,21 @@ function About() {
           </div>
         </div>
 
-        <TimelineSection
-          eyebrow="What I have done"
-          title="Positions Held & Consultancy Roles"
-          items={POSITIONS_HELD}
-        />
+        <div className="timeline-block">
+          <div className="section-heading">
+            <span className="section-eyebrow">What I have done</span>
+            <h3 className="section-title">Positions Held &amp; Consultancy Roles</h3>
+          </div>
+
+          <LogoCarousel
+            items={POSITIONS_HELD.map((position) => ({
+              ...position,
+              tag: position.period,
+              subtitle: position.description,
+            }))}
+            label="Positions held"
+          />
+        </div>
 
         <TimelineSection
           eyebrow="Beyond the profession"

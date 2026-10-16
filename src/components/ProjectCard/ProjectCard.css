@@ -53,3 +53,15 @@
     padding: 1rem;
   }
 }
+
+.project-card-tag {
+  align-self: flex-start;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  background: #e9e0f7;
+  color: #663399;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

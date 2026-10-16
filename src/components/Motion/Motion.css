@@ -1,4 +1,9 @@
 /* ---------- Scroll reveal (classes are added by Motion.jsx) ---------- */
+/* Elements start a little off to the side; never let that widen the page. */
+#main {
+  overflow-x: clip;
+}
+
 .reveal {
   opacity: 0;
   transition:

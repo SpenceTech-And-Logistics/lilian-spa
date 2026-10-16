@@ -21,8 +21,8 @@ const REVEAL = [
   [".section-heading", "up"],
   [".info-card", "up stagger"],
   [".projects-toolbar, .projects-intro", "up"],
-  [".projects-carousel", "zoom"],
-  [".projects-grid .project-card", "up stagger"],
+  [".logo-carousel-wrap", "zoom"],
+  [".logo-grid .project-card", "up stagger"],
   [".contact-info > .contact-card", "left stagger"],
   [".form-card", "right"],
 ];

@@ -26,62 +26,82 @@ export const ROLES = [
 ];
 
 // Positions held and jobs / consultancy roles
+//   period      - small label on the card (the role, or the years)
+//   title       - organisation or position
+//   description - one line under the title
+//   logo        - filename in src/assets/images/ (any subfolder) or a link
+//   short       - letters shown if there is no logo
 export const POSITIONS_HELD = [
   {
     period: "2007 - Present",
     title: "Advocate",
-    place: "",
-    description: "Admitted to the bar in 2004. I have served ",
+    description: "Admitted to the bar in 2004.",
+    logo: "",
+    short: "ADV",
   },
   {
     period: "Consultant",
     title: "AllAfrica Advisors",
-    place: "",
-    description: "Policy. Compliance. Governance. Legislation. ",
+    description: "Policy. Compliance. Governance. Legislation.",
+    logo: "",
+    short: "AAA",
   },
   {
     period: "Consultant",
     title: "PharmAccess Foundation",
-    place: "",
     description:
-      "Policy. Legislation. Quality Health Care and Patient Safety Bill, 2025.  ",
+      "Policy. Legislation. Quality Health Care and Patient Safety Bill, 2025.",
+    logo: "https://www.pharmaccess.org/wp-content/uploads/2022/04/pa-logo-e1650980354537.png",
+    short: "PAF",
   },
   {
     period: "Consultant",
     title: "United States Agency for International Development (USAID)",
-    place: "",
-    description: "Policy and Legislation in Healthcare  ",
+    description: "Policy and Legislation in Healthcare",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZOkPBBsar1QpfsT33_mcr_4L98caei6NaKXXyrAMDrNCLX8VYl_7YwYa&s=10",
+    short: "USAID",
   },
   {
     period: "Consultant",
     title: "LMB & Partners",
-    place: "",
-    description: "Legal. Research. Compliance. Mediation. Negotiation.  ",
+    description: "Legal. Research. Compliance. Mediation. Negotiation.",
+    logo: "",
+    short: "LMB",
   },
   {
     period: "Consultant",
     title: "BroadWalk Arms",
-    place: "",
-    description: "Firearms Act ",
+    description: "Firearms Act",
+    logo: "broadwalk.png",
+    short: "BWA",
   },
-  { period: "Consultant", title: "Women in Business", place: "", description: "" },
+  {
+    period: "Consultant",
+    title: "Women in Business",
+    description: "",
+    logo: "",
+    short: "WIB",
+  },
   {
     period: "Legal Advisor",
     title: "Maendeleo Ya Wanawake Nairobi",
-    place: "",
     description: "",
+    logo: "",
+    short: "MYWO",
   },
   {
     period: "Advocate",
     title: "Manegene & Partners Advocates",
-    place: "",
-    description: "Managing Director ",
+    description: "Managing Director",
+    logo: "",
+    short: "MPA",
   },
   {
     period: "Advocate",
     title: "Onesmus Githinji & Partners",
-    place: "",
-    description: "Associate Advocate ",
+    description: "Associate Advocate",
+    logo: "",
+    short: "OGP",
   },
 ];
 

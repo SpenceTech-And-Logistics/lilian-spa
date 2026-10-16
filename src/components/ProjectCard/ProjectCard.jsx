@@ -15,6 +15,7 @@ function ProjectCard({ item }) {
       </div>
 
       <div className="project-card-body">
+        {item.tag && <span className="project-card-tag">{item.tag}</span>}
         <h4>{item.title}</h4>
         {showSubtitle && <p>{item.subtitle}</p>}
       </div>
