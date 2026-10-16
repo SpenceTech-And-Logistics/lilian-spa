@@ -9,8 +9,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <p className="footer-name">Lilian Wanjiku Manegene</p>
-        <p className="footer-tagline">Advocate &middot; Consultant &middot; Wanjiku for Wanjiku</p>
+        <p className="footer-name">Lilian Manegene</p>
+        <p className="footer-tagline">
+          Advocate &middot; Consultant &middot; Wanjiku for Wanjiku
+        </p>
 
         {socials.length > 0 && (
           <div className="social-links">
@@ -38,7 +40,9 @@ function Footer() {
           {CONTACT.phone && (
             <li>
               <FaPhoneAlt aria-hidden="true" />
-              <a href={`tel:${CONTACT.phoneLink || CONTACT.phone}`}>{CONTACT.phone}</a>
+              <a href={`tel:${CONTACT.phoneLink || CONTACT.phone}`}>
+                {CONTACT.phone}
+              </a>
             </li>
           )}
           {CONTACT.location && (
@@ -56,7 +60,7 @@ function Footer() {
         </nav>
 
         <p className="footer-copy">
-          &copy; {new Date().getFullYear()} Lilian Wanjiku Manegene. All rights
+          &copy; {new Date().getFullYear()} Lilian Manegene. All rights
           reserved.
         </p>
       </div>

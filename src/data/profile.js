@@ -24,9 +24,9 @@ export const STATS = [
 
 // Shown in the footer. Leave a value empty ("") to hide it.
 export const CONTACT = {
-  email: "manegenel@gmail.com",
-  phone: "(+254) 722 809084",
-  phoneLink: "+254722809084",
+  email: "",
+  phone: "",
+  phoneLink: "",
   location: "Nairobi, Kenya",
 };
 
@@ -35,7 +35,7 @@ export const SOCIALS = [
   {
     icon: FaFacebookF,
     label: "Facebook",
-    href: "https://www.facebook.com/media/set/?set=a.815673175140432&type=3",
+    href: "",
   },
   { icon: FaTwitter, label: "Twitter", href: "" },
   { icon: FaInstagram, label: "Instagram", href: "" },
