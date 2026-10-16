@@ -1,0 +1,228 @@
+.projects {
+  background:
+    radial-gradient(circle at 12% 0%, #efe6ff 0%, transparent 50%),
+    radial-gradient(circle at 92% 100%, #f1e9ff 0%, transparent 45%),
+    #faf9ff;
+}
+
+/* Tabs and controls */
+.projects-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: #e9e0f7;
+  color: #663399;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  transform: translateY(-1px);
+  background: #dccff2;
+}
+
+.filter-buttons button.active {
+  background: #663399;
+  color: white;
+}
+
+.filter-count {
+  min-width: 1.5rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(102, 51, 153, 0.14);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.filter-buttons button.active .filter-count {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.projects-controls {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.projects-control {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid #d9cdee;
+  border-radius: 999px;
+  background: white;
+  color: #663399;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.projects-control:hover {
+  background: #f3ecff;
+  border-color: #663399;
+}
+
+.projects-intro {
+  color: #7a6a93;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel */
+.projects-carousel {
+  --swiper-theme-color: #663399;
+  --swiper-navigation-color: #663399;
+  --swiper-pagination-color: #663399;
+  --swiper-navigation-size: 22px;
+  position: relative;
+}
+
+.projects-carousel .swiper {
+  padding: 0.5rem 0.4rem 3.2rem;
+}
+
+.projects-carousel .swiper-slide {
+  height: auto;
+}
+
+.projects-carousel .swiper-button-prev,
+.projects-carousel .swiper-button-next {
+  top: calc(50% - 1.6rem);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 6px 18px rgba(45, 20, 87, 0.2);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.projects-carousel .swiper-button-prev {
+  left: -22px;
+}
+
+.projects-carousel .swiper-button-next {
+  right: -22px;
+}
+
+.projects-carousel .swiper-button-prev:hover,
+.projects-carousel .swiper-button-next:hover {
+  background: #f3ecff;
+  transform: scale(1.06);
+}
+
+.projects-carousel .swiper-pagination-bullet {
+  background: #b9a3dc;
+  opacity: 1;
+}
+
+.projects-carousel .swiper-pagination-bullet-active {
+  background: #663399;
+}
+
+/* One slide */
+.project-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  border: 1px solid #efe9f8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(45, 20, 87, 0.08);
+  user-select: none;
+}
+
+.project-slide-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  padding: 1.6rem;
+  background: linear-gradient(160deg, #faf8ff, #f1e9ff);
+  border-bottom: 1px solid #f1ecf8;
+}
+
+.project-slide-logo img {
+  -webkit-user-drag: none;
+}
+
+.project-slide-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 1.3rem 1.5rem 1.6rem;
+}
+
+.project-slide-tag {
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  background: #e9e0f7;
+  color: #663399;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-slide-body h3 {
+  color: #2d1457;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.project-slide-body p {
+  color: #7a6a93;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* "Show all" grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .projects-carousel .swiper-button-prev,
+  .projects-carousel .swiper-button-next {
+    display: none;
+  }
+
+  .project-slide-logo {
+    height: 140px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

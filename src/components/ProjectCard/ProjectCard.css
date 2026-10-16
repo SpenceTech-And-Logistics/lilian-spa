@@ -1,0 +1,55 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #efe9f8;
+  box-shadow: 0 4px 15px rgba(45, 20, 87, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(45, 20, 87, 0.14);
+}
+
+.project-card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  padding: 1.5rem;
+  background: #faf8ff;
+  border-bottom: 1px solid #f1ecf8;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  padding: 1.25rem 1.4rem 1.5rem;
+}
+
+.project-card-body h4 {
+  color: #2d1457;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.project-card-body p {
+  color: #7a6a93;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Phones: shorter logo area so long lists are less tall */
+@media (max-width: 600px) {
+  .project-card-logo {
+    height: 110px;
+    padding: 1rem;
+  }
+}

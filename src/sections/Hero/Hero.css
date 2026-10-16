@@ -1,0 +1,125 @@
+.hero {
+  min-height: calc(100vh - 60px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+
+  padding: 0 8%;
+  background: #f9f6ff;
+}
+
+.hero > * {
+  min-width: 0;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.4rem, 6vw, 3.5rem);
+  font-family: "Poppins", sans-serif;
+  color: #663399;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  font-family: "Fredoka", sans-serif;
+  color: #8a2be2;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #663399;
+  transform: translateY(-3px);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-button-outline {
+  background: transparent;
+  color: #663399;
+  border: 2px solid #8a2be2;
+  padding: 12px 26px;
+}
+
+.hero-button-outline:hover {
+  background: #8a2be2;
+  color: white;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 550px;
+  height: 550px;
+  object-fit: cover;
+
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(102, 51, 153, 0.25);
+}
+
+/* Tablet and phone: stack the text above the photo */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 2.5rem;
+    padding: 3rem 6% 4rem;
+  }
+
+  .hero-content p {
+    max-width: none;
+  }
+
+  .hero-image img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.25rem 6% 3rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-button {
+    display: block;
+    text-align: center;
+  }
+}
