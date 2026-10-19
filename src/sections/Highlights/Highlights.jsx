@@ -13,13 +13,29 @@ import "./Highlights.css";
 // How each group in src/data/projects.js is labelled on its card.
 // Key: "<section id>:<group number>"
 const CATEGORY = {
-  "regulations:0": { label: "Key Act", plural: "Key Acts", icon: FaBalanceScale },
-  "regulations:1": { label: "Regulatory Body", plural: "Regulatory Bodies", icon: FaLandmark },
-  "consultancy:0": { label: "Major Client", plural: "Major Clients", icon: FaHandshake },
+  "regulations:0": {
+    label: "Key Acts",
+    plural: "Key Acts",
+    icon: FaBalanceScale,
+  },
+  "regulations:1": {
+    label: "Regulations",
+    plural: "Regulatory Bodies",
+    icon: FaLandmark,
+  },
+  "consultancy:0": {
+    label: "Major Client",
+    plural: "Major Clients",
+    icon: FaHandshake,
+  },
   "cases:0": { label: "Case", plural: "Cases", icon: FaGavel },
 };
 
-const FALLBACK = { label: "Highlight", plural: "Highlights", icon: FaBalanceScale };
+const FALLBACK = {
+  label: "Highlight",
+  plural: "Highlights",
+  icon: FaBalanceScale,
+};
 
 // One list with everything, each item tagged with its category.
 const items = sections.flatMap((section) =>
@@ -63,8 +79,7 @@ function Highlights() {
           {legend.map((category) => (
             <li key={category.label}>
               {createElement(category.icon, { "aria-hidden": true })}
-              <strong>{category.count}</strong>{" "}
-              {category.count === 1 ? category.label : category.plural}
+              {category.plural}
             </li>
           ))}
         </ul>

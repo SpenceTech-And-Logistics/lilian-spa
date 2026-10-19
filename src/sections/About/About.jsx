@@ -47,18 +47,20 @@ function About() {
           </div>
 
           <div className="who-text">
-            <span className="section-eyebrow">Hello, I'm Lilian</span>
+            <span className=""></span>
             <h2 id="about-title">Who Am I?</h2>
 
             <p>
-              Through thoughtful advocacy and expert consultancy,{" "}
-              <span className="highlight">Lilian Wanjiku</span> empowers clients
-              to make informed decisions, protect their interests, and achieve
-              their goals.
+              Through thoughtful advocacy and expert consultancy, I help my
+              clients make informed decisions, protect their interests, and
+              achieve their goals.
             </p>
 
+            <br />
+            <br />
+
             <p>
-              She is dedicated to building trusted relationships founded on
+              I am dedicated to building trusted relationships founded on
               transparency, excellence, and results.
             </p>
 
@@ -73,7 +75,9 @@ function About() {
         <div className="timeline-block">
           <div className="section-heading">
             <span className="section-eyebrow">What I have done</span>
-            <h3 className="section-title">Positions Held &amp; Consultancy Roles</h3>
+            <h3 className="section-title">
+              Positions Held &amp; Consultancy Roles
+            </h3>
           </div>
 
           <LogoCarousel
