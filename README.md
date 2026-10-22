@@ -1,6 +1,6 @@
 # Lilian Manegene: single-page website
 
-One-page React site (Vite). Sections: Home, About, Career Highlights (rotating carousel). Social links, email and phone are in the footer.
+One-page React site (Vite). Sections: Home, About (positions and leadership roles), Career Highlights (filterable cards). Social links, email and phone are in the footer.
 
 ```bash
 npm install
@@ -16,7 +16,7 @@ npm run build      # production build into dist/
 | Career Highlights: Acts, regulatory bodies, clients, cases (and their logos) | `src/data/projects.js` |
 | Footer email, phone, location and social links | `CONTACT` and `SOCIALS` in `src/data/profile.js` |
 | Page title, description, share image, search-engine details | `src/seo/site.js` |
-| Which things animate | top of `src/components/Motion/Motion.jsx` |
+| Colours and fonts | `:root` at the top of `src/styles.css` |
 
 Images go in `src/assets/images/` (logos can live in a `logos/` subfolder, and
 `logo` in `projects.js` can also be a link).

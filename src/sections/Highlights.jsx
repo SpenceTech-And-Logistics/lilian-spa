@@ -20,12 +20,11 @@ const items = sections.flatMap((section) =>
 );
 
 const tabs = [
-  { key: "All", label: "All", count: items.length },
+  { key: "All", label: "All" },
   ...Object.values(CATEGORY).map((c) => ({
     key: c.label,
     label: c.plural,
     icon: c.icon,
-    count: items.filter((i) => i.tag === c.label).length,
   })),
 ];
 
@@ -55,7 +54,6 @@ function Highlights() {
             onClick={() => setTab(t.key)}
           >
             {t.label}
-            <span>{t.count}</span>
           </button>
         ))}
       </div>

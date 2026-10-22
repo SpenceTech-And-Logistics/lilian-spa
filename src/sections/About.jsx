@@ -19,16 +19,12 @@ function About() {
           />
         </div>
         <div className="who-tx rv">
-          <p className="eyebrow">Hello, I&rsquo;m Lilian</p>
-          <h2 id="about-title">Who Am I?</h2>
+                    <h2 id="about-title">Who Am I?</h2>
           <p className="lead">
-            Through thoughtful advocacy and expert consultancy, <mark>Lilian Wanjiku</mark> empowers
-            clients to make informed decisions, protect their interests, and achieve their goals.
+            Through thoughtful advocacy and expert consultancy, I help my clients make informed
+            decisions, protect their interests, and achieve their goals.
           </p>
-          <p>
-            She is dedicated to building trusted relationships founded on transparency, excellence,
-            and results.
-          </p>
+          <p>I am dedicated to building trusted relationships founded on transparency, excellence, and results.</p>
           <ul className="chips">
             {ROLES.map((role) => (
               <li key={role}>{role}</li>
@@ -43,7 +39,6 @@ function About() {
         <ol className="ledger">
           {POSITIONS_HELD.map((p, i) => (
             <li className="row rv" key={`${p.title}-${i}`}>
-              <span className="row-n">{String(i + 1).padStart(2, "0")}</span>
               <span className="row-p">{p.period}</span>
               <div className="row-t">
                 <b>{p.title}</b>

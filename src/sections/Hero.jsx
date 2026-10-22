@@ -14,7 +14,6 @@ function Hero() {
             <span>{first}</span>
             <span className="it">{rest.join(" ")}</span>
           </h1>
-          <h2 className="hero-sub">{PROFILE.heroTitle}</h2>
           <p className="hero-text">{PROFILE.heroText}</p>
           <div className="cta">
             <a href="#highlights" className="btn solid">
@@ -39,8 +38,8 @@ function Hero() {
             />
           </div>
           <div className="seal" aria-hidden="true">
-            <b>20+</b>
-            <span>years in law &amp; policy</span>
+            <b>&ldquo;</b>
+            <span>Wanjiku for Wanjiku</span>
           </div>
         </div>
       </section>

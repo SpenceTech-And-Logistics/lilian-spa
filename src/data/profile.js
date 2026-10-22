@@ -142,7 +142,7 @@ export const OTHER_POSITIONS = [
   },
   {
     period: "Co-Founder",
-    title: "SpenceTech and Logistics",
+    title: "SpenceTec and Logistics Limited",
     place: "",
     description: "",
   },

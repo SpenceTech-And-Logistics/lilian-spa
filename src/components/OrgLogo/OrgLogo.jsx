@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { findImage } from "../../utils/resolveImage";
-import "./OrgLogo.css";
 
 const STOP_WORDS = new Set(["of", "and", "the", "for", "&"]);
 
