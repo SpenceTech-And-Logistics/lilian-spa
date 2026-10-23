@@ -19,12 +19,27 @@ function About() {
           />
         </div>
         <div className="who-tx rv">
-                    <h2 id="about-title">Who Am I?</h2>
+          <p className="eyebrow">About</p>
+          <h2 id="about-title">Lilian Wanjiku Manegene</h2>
           <p className="lead">
-            Through thoughtful advocacy and expert consultancy, I help my clients make informed
-            decisions, protect their interests, and achieve their goals.
+            Lilian Wanjiku Manegene is a distinguished legal and governance professional, strategic advisor and
+            institutional reform specialist with over 20 years of experience spanning legal practice, public policy,
+            legislative reform, institutional governance and corporate advisory. An Advocate of the High Court of
+            Kenya, she has built an extensive career providing high-level legal and strategic advisory services to
+            government institutions, development partners and private sector organisations.
           </p>
-          <p>I am dedicated to building trusted relationships founded on transparency, excellence, and results.</p>
+          <p>
+            Her professional experience includes serving as an <b>Independent Legal Consultant under the USAID-funded
+            LISA Programme</b>, contributing to governance, regulatory and institutional reforms within Kenya&rsquo;s
+            health sector. She has also served as a <b>member of the Dispute Resolution Committee of the Kenya
+            National Chamber of Commerce and Industry (KNCCI)</b>, contributing to alternative dispute resolution and
+            commercial dispute management.
+          </p>
+          <p>
+            A significant milestone in her professional journey was her selection as a finalist and participation in
+            the formal interviews for the position of <b>Chairperson of Kenya&rsquo;s Independent Electoral and
+            Boundaries Commission (IEBC)</b>.
+          </p>
           <ul className="chips">
             {ROLES.map((role) => (
               <li key={role}>{role}</li>

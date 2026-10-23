@@ -80,8 +80,10 @@ button { font: inherit; }
 .who { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 72px; align-items: center; }
 .who-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 60% 20%; border-radius: 18px; box-shadow: 22px 22px 0 var(--lav3); }
 .about h2 { font-size: clamp(44px, 5.4vw, 76px); line-height: 1; color: var(--deep); }
-.who-tx .lead { font-family: var(--serif); font-size: clamp(24px, 2.4vw, 32px); line-height: 1.3; margin-top: 22px; }
-.who-tx .lead + p { margin-top: 18px; color: var(--mut); font-size: 18px; }
+.who-tx .lead { font-family: var(--serif); font-size: clamp(18px, 1.5vw, 20px); line-height: 1.6; margin-top: 18px; color: var(--ink); }
+.who-tx h2 { font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; }
+.who-tx p + p { margin-top: 16px; color: var(--mut); font-size: 17px; line-height: 1.65; }
+.who-tx p b { color: var(--ink, inherit); font-weight: 600; }
 mark { background: none; color: var(--purple); font-style: italic; }
 .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .chips li { border: 1.5px solid var(--purple); color: var(--purple); padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 14px; transition: background 0.2s, color 0.2s; }
