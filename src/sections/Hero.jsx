@@ -14,7 +14,11 @@ function Hero() {
             <span>{first}</span>
             <span className="it">{rest.join(" ")}</span>
           </h1>
-          <p className="hero-text">{PROFILE.heroText}</p>
+          <ul className="chips hero-chips" aria-label="Professional titles">
+            {ROLES.map((role) => (
+              <li key={role}>{role}</li>
+            ))}
+          </ul>
           <div className="cta">
             <a href="#highlights" className="btn solid">
               Career Highlights

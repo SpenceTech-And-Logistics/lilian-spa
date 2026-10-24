@@ -14,10 +14,10 @@ export const sections = [
   {
     id: "regulations",
     label: "Regulations",
-    intro: "Acts and the regulatory bodies they establish.",
+    intro: "Key Acts, Bills and regulations.",
     groups: [
       {
-        title: "Key Acts",
+        title: "Key Acts & Bills",
         items: [
           {
             title: "The Social Health Insurance Act (No. 16 of 2023)",
@@ -26,8 +26,9 @@ export const sections = [
             short: "SHA",
           },
           {
-            title: "The Quality Healthcare and Patient Safety Act, 2025.",
+            title: "The Quality Health Care and Patient Safety Bill, 2025",
             subtitle: "",
+            badge: "Key Bill",
             logo: "moh.png",
             short: "PA",
           },
@@ -46,7 +47,7 @@ export const sections = [
         ],
       },
       {
-        title: "Regulatory Bodies & Governing Acts",
+        title: "Regulations",
         items: [
           {
             title: "Kenya Health Professionals Oversight Authority",
@@ -170,7 +171,7 @@ export const sections = [
           },
           {
             title: "Broadwalk Arms",
-            subtitle: "",
+            subtitle: "Amendment to the Firearms Act",
             logo: "broadwalk.png",
             short: "Broadwalk Arms",
           },

@@ -87,6 +87,8 @@ button { font: inherit; }
 mark { background: none; color: var(--purple); font-style: italic; }
 .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .chips li { border: 1.5px solid var(--purple); color: var(--purple); padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 14px; transition: background 0.2s, color 0.2s; }
+.hero-chips { margin-top: 22px; max-width: 560px; }
+.hero-chips li { padding: 7px 15px; font-size: 13px; }
 .chips li:hover { background: var(--purple); color: #fff; }
 .h3 { font-size: clamp(34px, 4vw, 52px); line-height: 1.05; color: var(--deep); max-width: 760px; }
 .ledger-wrap, .roles-wrap { margin-top: 120px; }

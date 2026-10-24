@@ -1,4 +1,4 @@
-import { ROLES, POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
+import { POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
 import OrgLogo from "../components/OrgLogo/OrgLogo";
 import { PLACEHOLDER } from "../utils/resolveImage";
 import profile from "../assets/images/lilly.jpg";
@@ -53,11 +53,6 @@ function About() {
             </b>
             .
           </p>
-          <ul className="chips">
-            {ROLES.map((role) => (
-              <li key={role}>{role}</li>
-            ))}
-          </ul>
         </div>
       </div>
 
