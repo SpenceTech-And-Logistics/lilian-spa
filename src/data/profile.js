@@ -112,7 +112,7 @@ export const POSITIONS_HELD = [
   {
     period: "Advocate",
     title: "Manegene & Partners Advocates",
-    description: "Managing Director",
+    description: "Managing Partner",
     logo: "Manegene & Partners Advocates",
     short: "MPA",
   },
