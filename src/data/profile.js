@@ -54,9 +54,9 @@ export const ROLES = [
 //   short       - letters shown if there is no logo
 export const POSITIONS_HELD = [
   {
-    period: "2007 - Present",
+    period: "2004 - Present",
     title: "Advocate",
-    description: "Admitted to the bar in 2004.",
+    description: "Member of Law Society of Kenya since 2004.",
     logo: "https://lsk.or.ke/wp-content/uploads/2023/03/logo.png",
     short: "ADV",
   },
@@ -70,8 +70,7 @@ export const POSITIONS_HELD = [
   {
     period: "Consultant",
     title: "PharmAccess Foundation",
-    description:
-      "Policy. Legislation. Quality Health Care and Patient Safety Bill, 2025.",
+    description: "Quality Health Care and Patient Safety Bill, 2025.",
     logo: "https://www.pharmaccess.org/wp-content/uploads/2022/04/pa-logo-e1650980354537.png",
     short: "PAF",
   },

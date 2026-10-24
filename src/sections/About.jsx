@@ -1,4 +1,4 @@
-import { ROLES, POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
+import { POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
 import OrgLogo from "../components/OrgLogo/OrgLogo";
 import { PLACEHOLDER } from "../utils/resolveImage";
 import profile from "../assets/images/lilly.jpg";
@@ -40,11 +40,6 @@ function About() {
             the formal interviews for the position of <b>Chairperson of Kenya&rsquo;s Independent Electoral and
             Boundaries Commission (IEBC)</b>.
           </p>
-          <ul className="chips">
-            {ROLES.map((role) => (
-              <li key={role}>{role}</li>
-            ))}
-          </ul>
         </div>
       </div>
 
