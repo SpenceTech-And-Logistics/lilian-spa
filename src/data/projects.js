@@ -57,14 +57,6 @@ export const sections = [
           },
 
           {
-            title: "Kenya National Public Health Institute",
-            subtitle:
-              "Kenya National Public Health Institute Order, 2022 (Legal Notice No. 14 of 2022)",
-            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JNmQ6TcRGtukPwqsifZAN8Y3qeGPZNoiTnAo9ltAeA&s=10",
-            short: "KNPHI",
-          },
-
-          {
             title: "Counselors and Psychologists Board",
             subtitle: "Counsellors and Psychologists Act, No. 14 of 2014",
             logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMikSIhSYgLBnQgpEwugDyxLApgUh1AxGn1Qtkf49PGhId_VEaEhBt-7o&s=10",
@@ -91,13 +83,6 @@ export const sections = [
             subtitle: "Nurses and Midwives Act, Cap. 257",
             logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rdySNqXtDkQbeB5q2oMOYWfnK9mewdCa7t9lheqlCA&s=10s",
             short: "NCK",
-          },
-
-          {
-            title: "National Quality Control Laboratories",
-            subtitle: "Pharmacy and Poisons Act, Cap. 244",
-            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCz5igGDx3WpSGB5vRkHZjQUd0ax6kXNzVQca0ql0IhQ&s=10",
-            short: "NQCL",
           },
           {
             title: "Health Records and Information Managers Board",
@@ -174,6 +159,18 @@ export const sections = [
             subtitle: "Amendment to the Firearms Act",
             logo: "broadwalk.png",
             short: "Broadwalk Arms",
+          },
+          {
+            title: "Kenya National Public Health Institute",
+            subtitle: "",
+            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JNmQ6TcRGtukPwqsifZAN8Y3qeGPZNoiTnAo9ltAeA&s=10",
+            short: "KNPHI",
+          },
+          {
+            title: "National Quality Control Laboratories",
+            subtitle: "",
+            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCz5igGDx3WpSGB5vRkHZjQUd0ax6kXNzVQca0ql0IhQ&s=10",
+            short: "NQCL",
           },
         ],
       },

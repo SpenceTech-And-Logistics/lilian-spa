@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-top">
         <div>
           <p className="footer-name">Lilian Manegene</p>
-          <p className="footer-tag">Advocate &middot; Consultant &middot; Wanjiku for Wanjiku</p>
+          <p className="footer-tag">Advocate &middot; Consultant</p>
           {socials.length > 0 && (
             <div className="socials">
               {socials.map(({ icon, label, href }) => (

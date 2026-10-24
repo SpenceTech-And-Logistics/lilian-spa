@@ -9,7 +9,6 @@ function Hero() {
     <>
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-l">
-          <p className="kicker">{PROFILE.tagline}</p>
           <h1 id="hero-title">
             <span>{first}</span>
             <span className="it">{rest.join(" ")}</span>
@@ -35,15 +34,11 @@ function Hero() {
           <div className="arch">
             <img
               src={portrait}
-              alt="Portrait of Lilian Wanjiku Manegene, advocate and consultant"
+              alt="Portrait of Lilian Manegene, advocate and consultant"
               width="1080"
               height="1009"
               fetchPriority="high"
             />
-          </div>
-          <div className="seal" aria-hidden="true">
-            <b>&ldquo;</b>
-            <span>Wanjiku for Wanjiku</span>
           </div>
         </div>
       </section>
