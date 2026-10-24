@@ -10,7 +10,7 @@ function About() {
         <div className="who-img rv">
           <img
             src={profile}
-            alt="Lilian Wanjiku Manegene"
+            alt="Lilian Manegene"
             loading="lazy"
             onError={(e) => {
               e.currentTarget.onerror = null;
@@ -21,7 +21,7 @@ function About() {
         <div className="who-tx rv">
           <p className="eyebrow">About</p>
           <p className="lead">
-            Lilian Wanjiku Manegene is a distinguished legal and governance professional, strategic advisor and
+            Lilian Manegene is a distinguished legal and governance professional, strategic advisor and
             institutional reform specialist with over 20 years of experience spanning legal practice, public policy,
             legislative reform, institutional governance and corporate advisory. An Advocate of the High Court of
             Kenya, she has built an extensive career providing high-level legal and strategic advisory services to

@@ -34,7 +34,7 @@ function Hero() {
           <div className="arch">
             <img
               src={portrait}
-              alt="Portrait of Lilian Wanjiku Manegene, advocate and consultant"
+              alt="Portrait of Lilian Manegene, advocate and consultant"
               width="1080"
               height="1009"
               fetchPriority="high"

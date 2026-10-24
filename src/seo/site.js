@@ -4,11 +4,11 @@
 
 export const SITE = {
   name: "Lilian Manegene",
-  legalName: "Lilian Wanjiku Manegene",
+  legalName: "Lilian Manegene",
   jobTitle: "Advocate",
   title: "Lilian Manegene | Advocate & Legal Consultant in Nairobi",
   description:
-    "Lilian Wanjiku Manegene is a Nairobi advocate and consultant in health policy and legislation, dispute resolution, mediation, compliance and legislative drafting.",
+    "Lilian Manegene is a Nairobi advocate and consultant in health policy and legislation, dispute resolution, mediation, compliance and legislative drafting.",
   image: "/og-image.jpg",
   imageAlt: "Lilian Manegene, advocate and consultant",
   email: "manegenel@gmail.com",

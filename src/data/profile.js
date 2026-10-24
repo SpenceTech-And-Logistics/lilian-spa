@@ -9,7 +9,6 @@ import {
 
 export const PROFILE = {
   name: "Lilian Manegene",
-  tagline: "Wanjiku for Wanjiku",
   heroText:
     "Advocate. Consultant. Dispute Resolution Advisor. Mediator. Arbitrator. Lobbyist. Negotiator. Compliance Expert. Legislative Drafter.",
 };
