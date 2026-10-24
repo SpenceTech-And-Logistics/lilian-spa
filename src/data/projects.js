@@ -26,8 +26,9 @@ export const sections = [
             short: "SHA",
           },
           {
-            title: "The Quality Healthcare and Patient Safety Act, 2025.",
+            title: "The Quality Health Care and Patient Safety Bill, 2025",
             subtitle: "",
+            badge: "Key Bill",
             logo: "moh.png",
             short: "PA",
           },
