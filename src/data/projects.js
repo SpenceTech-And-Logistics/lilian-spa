@@ -14,10 +14,10 @@ export const sections = [
   {
     id: "regulations",
     label: "Regulations",
-    intro: "Key Acts and regulations.",
+    intro: "Key Acts, Bills and regulations.",
     groups: [
       {
-        title: "Key Acts",
+        title: "Key Acts & Bills",
         items: [
           {
             title: "The Social Health Insurance Act (No. 16 of 2023)",
