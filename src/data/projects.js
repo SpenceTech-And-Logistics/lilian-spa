@@ -170,7 +170,7 @@ export const sections = [
           },
           {
             title: "Broadwalk Arms",
-            subtitle: "",
+            subtitle: "Amendment to the Firearms Act",
             logo: "broadwalk.png",
             short: "Broadwalk Arms",
           },

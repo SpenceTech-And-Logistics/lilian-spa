@@ -91,12 +91,12 @@ export const POSITIONS_HELD = [
   {
     period: "Consultant",
     title: "BroadWalk Arms",
-    description: "Firearms Act",
+    description: "Amendment to the Firearms Act",
     logo: "broadwalk.png",
     short: "BroadWalk Arms",
   },
   {
-    period: "Consultant",
+    period: "Legal Advisor",
     title: "Women in Business",
     description: "",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfJy6OanR_tcRiwqLqYEVru2oNfZSsK8_MNJyjPNQP1Q&s=10",
