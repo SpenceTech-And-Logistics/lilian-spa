@@ -6,7 +6,7 @@ import OrgLogo from "../components/OrgLogo/OrgLogo";
 // How each group in src/data/projects.js is labelled. Key: "<section id>:<group number>"
 const CATEGORY = {
   "regulations:0": { label: "Key Act", plural: "Key Acts", icon: FaBalanceScale },
-  "regulations:1": { label: "Regulatory Body", plural: "Regulatory Bodies", icon: FaLandmark },
+  "regulations:1": { label: "Regulation", plural: "Regulations", icon: FaLandmark },
   "consultancy:0": { label: "Major Client", plural: "Major Clients", icon: FaHandshake },
   "cases:0": { label: "Case", plural: "Cases", icon: FaGavel },
 };
@@ -38,8 +38,7 @@ function Highlights() {
         <p className="eyebrow">My work</p>
         <h2 id="highlights-title">Career Highlights</h2>
         <p>
-          Key legislation, the regulatory bodies behind it, major clients and cases from a career in
-          law and policy.
+          Key legislation, major clients and cases from a career in law and policy.
         </p>
       </div>
 

@@ -14,7 +14,7 @@ export const sections = [
   {
     id: "regulations",
     label: "Regulations",
-    intro: "Acts and the regulatory bodies they establish.",
+    intro: "Key Acts and regulations.",
     groups: [
       {
         title: "Key Acts",
@@ -46,7 +46,7 @@ export const sections = [
         ],
       },
       {
-        title: "Regulatory Bodies & Governing Acts",
+        title: "Regulations",
         items: [
           {
             title: "Kenya Health Professionals Oversight Authority",
