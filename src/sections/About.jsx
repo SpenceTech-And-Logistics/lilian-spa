@@ -5,7 +5,7 @@ import profile from "../assets/images/lilly.jpg";
 
 function About() {
   return (
-    <section className="sec about" id="about" aria-labelledby="about-title">
+    <section className="sec about" id="about" aria-label="About">
       <div className="who">
         <div className="who-img rv">
           <img
@@ -20,7 +20,6 @@ function About() {
         </div>
         <div className="who-tx rv">
           <p className="eyebrow">About</p>
-          <h2 id="about-title">Lilian Wanjiku Manegene</h2>
           <p className="lead">
             Lilian Wanjiku Manegene is a distinguished legal and governance professional, strategic advisor and
             institutional reform specialist with over 20 years of experience spanning legal practice, public policy,

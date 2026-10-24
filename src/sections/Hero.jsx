@@ -9,7 +9,6 @@ function Hero() {
     <>
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-l">
-          <p className="kicker">{PROFILE.tagline}</p>
           <h1 id="hero-title">
             <span>{first}</span>
             <span className="it">{rest.join(" ")}</span>
@@ -40,10 +39,6 @@ function Hero() {
               height="1009"
               fetchPriority="high"
             />
-          </div>
-          <div className="seal" aria-hidden="true">
-            <b>&ldquo;</b>
-            <span>Wanjiku for Wanjiku</span>
           </div>
         </div>
       </section>
