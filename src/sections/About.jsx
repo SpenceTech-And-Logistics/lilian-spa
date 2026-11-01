@@ -1,15 +1,17 @@
 import { POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
 import OrgLogo from "../components/OrgLogo/OrgLogo";
-import PhotoSlot from "../components/PhotoSlot/PhotoSlot";
+import PhotoSlot, { hasPhoto } from "../components/PhotoSlot/PhotoSlot";
 import { PHOTOS } from "../data/photos";
 
 function About() {
   return (
     <section className="sec about" id="about" aria-label="About">
-      <div className="who">
-        <div className="who-img rv">
-          <PhotoSlot source={PHOTOS.about} variant="about" alt="Lilian Manegene" />
-        </div>
+      <div className={`who${hasPhoto(PHOTOS.about) ? "" : " no-photo"}`}>
+        {hasPhoto(PHOTOS.about) && (
+          <div className="who-img rv">
+            <PhotoSlot source={PHOTOS.about} alt="Lilian Manegene" />
+          </div>
+        )}
         <div className="who-tx rv">
           <p className="eyebrow">About</p>
           <p className="lead">

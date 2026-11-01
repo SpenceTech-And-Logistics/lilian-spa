@@ -1,5 +1,5 @@
 import { CONTACT, PROFILE, ROLES } from "../data/profile";
-import PhotoSlot from "../components/PhotoSlot/PhotoSlot";
+import PhotoSlot, { hasPhoto } from "../components/PhotoSlot/PhotoSlot";
 import { PHOTOS } from "../data/photos";
 
 function Hero() {
@@ -8,7 +8,7 @@ function Hero() {
 
   return (
     <>
-      <section className="hero" id="home" aria-labelledby="hero-title">
+      <section className={`hero${hasPhoto(PHOTOS.portrait) ? "" : " no-photo"}`} id="home" aria-labelledby="hero-title">
         <div className="hero-l">
           <h1 id="hero-title">
             <span>{first}</span>
@@ -31,18 +31,19 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero-r">
-          <div className="arch">
-            <PhotoSlot
-              source={PHOTOS.portrait}
-              variant="portrait"
-              alt="Portrait of Lilian Manegene, advocate and consultant"
-              width="1080"
-              height="1009"
-              priority
-            />
+        {hasPhoto(PHOTOS.portrait) && (
+          <div className="hero-r">
+            <div className="arch">
+              <PhotoSlot
+                source={PHOTOS.portrait}
+                alt="Portrait of Lilian Manegene, advocate and consultant"
+                width="1080"
+                height="1009"
+                priority
+              />
+            </div>
           </div>
-        </div>
+        )}
       </section>
 
       <div className="ticker" aria-hidden="true">
