@@ -1,22 +1,14 @@
 import { POSITIONS_HELD, OTHER_POSITIONS } from "../data/profile";
 import OrgLogo from "../components/OrgLogo/OrgLogo";
-import { PLACEHOLDER } from "../utils/resolveImage";
-import profile from "../assets/images/lilly.jpg";
+import PhotoSlot from "../components/PhotoSlot/PhotoSlot";
+import { PHOTOS } from "../data/photos";
 
 function About() {
   return (
     <section className="sec about" id="about" aria-label="About">
       <div className="who">
         <div className="who-img rv">
-          <img
-            src={profile}
-            alt="Lilian Manegene"
-            loading="lazy"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = PLACEHOLDER;
-            }}
-          />
+          <PhotoSlot source={PHOTOS.about} variant="about" alt="Lilian Manegene" />
         </div>
         <div className="who-tx rv">
           <p className="eyebrow">About</p>

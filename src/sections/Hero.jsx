@@ -1,5 +1,6 @@
 import { CONTACT, PROFILE, ROLES } from "../data/profile";
-import portrait from "../assets/images/lilymain.jpg";
+import PhotoSlot from "../components/PhotoSlot/PhotoSlot";
+import { PHOTOS } from "../data/photos";
 
 function Hero() {
   const [first, ...rest] = PROFILE.name.split(" ");
@@ -32,12 +33,13 @@ function Hero() {
 
         <div className="hero-r">
           <div className="arch">
-            <img
-              src={portrait}
+            <PhotoSlot
+              source={PHOTOS.portrait}
+              variant="portrait"
               alt="Portrait of Lilian Manegene, advocate and consultant"
               width="1080"
               height="1009"
-              fetchPriority="high"
+              priority
             />
           </div>
         </div>
