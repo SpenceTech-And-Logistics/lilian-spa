@@ -198,3 +198,28 @@ mark { background: none; color: var(--purple); font-style: italic; }
   .nav:has(.nav-links.is-open) .nav-toggle i:first-child { top: 23px; transform: rotate(45deg); }
   .nav:has(.nav-links.is-open) .nav-toggle i:last-child { top: 23px; transform: rotate(-45deg); }
 }
+
+/* ===== Placeholder illustrations: motion ===== */
+.photo-ph * { transform-box: view-box; }
+.ph-spin { transform-origin: 50% 50%; transform-box: fill-box; animation: ph-spin 60s linear infinite; }
+.ph-rev { animation-direction: reverse; animation-duration: 80s; }
+.ph-beam { transform-origin: 240px 201px; animation: ph-rock 6s ease-in-out infinite; }
+.ph-pan-l { transform-origin: 100px 210px; animation: ph-counter 6s ease-in-out infinite; }
+.ph-pan-r { transform-origin: 380px 210px; animation: ph-counter 6s ease-in-out infinite; }
+.ph-glow { transform-origin: 50% 50%; transform-box: fill-box; animation: ph-glow 3.4s ease-in-out infinite; }
+.ph-twinkle { transform-origin: 50% 50%; transform-box: fill-box; animation: ph-twinkle 3.2s ease-in-out infinite; }
+.ph-col { animation: ph-fade 1.2s ease-out both; }
+.ph-fade { animation: ph-fade 1.2s ease-out both; }
+.ph-rise { transform-origin: 50% 100%; transform-box: fill-box; animation: ph-rise 0.9s cubic-bezier(.2,.8,.2,1) both; }
+.ph-drop { animation: ph-drop 0.9s cubic-bezier(.2,.8,.2,1) 0.1s both; }
+@keyframes ph-spin { to { transform: rotate(360deg); } }
+@keyframes ph-rock { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes ph-counter { 0%, 100% { transform: rotate(4deg); } 50% { transform: rotate(-4deg); } }
+@keyframes ph-glow { 0%, 100% { transform: scale(1); filter: brightness(1); } 50% { transform: scale(1.18); filter: brightness(1.2); } }
+@keyframes ph-twinkle { 0%, 100% { opacity: .15; transform: scale(.6); } 50% { opacity: 1; transform: scale(1.3); } }
+@keyframes ph-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ph-rise { from { transform: scaleY(0); opacity: 0; } to { transform: scaleY(1); opacity: 1; } }
+@keyframes ph-drop { from { transform: translateY(-26px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .photo-ph *, .photo-ph { animation: none !important; }
+}
